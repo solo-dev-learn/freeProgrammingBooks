@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
+        
+    <!-- Online Content -->
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/108847584?s=200&v=4"/>
+    <link rel="stylesheet" href="https://cdn.statically.io/gh/dependabot-pr/Static-Files/main/style.css"/>
+    <link rel="stylesheet" href="https://cdn.statically.io/gh/dependabot-pr/Static-Files/main/animation.css"/>
+    
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+    <nav id="customNav" class="navbar navbar-expand-sm bg-light fixed-top">
+      <div class="container-fluid">
+        <ul class="navbar-nav justify-content-start">
+          <li>
+            <a href="{{ site.github.repository_url }}" draggable="false">
+              <img alt="a" id="hrtLogo" src="https://avatars.githubusercontent.com/u/108847584?s=200&v=4" draggable="false"/>
+            </a>
+          </li>
+        </ul>
+        
+        <ul class="navbar-nav justify-content-end">
+          <li>
+            <h3 class="noSelect">{{ page.title | default: site.title | default: site.github.repository_name }}</h3>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="progressBar"></div>
+    <div id="scrollTop"><i class="fa fa-angle-up"></i></div>
+    
+    <main id="content" class="main-content pushDown200" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+        {% endif %}
+      </footer>
+    </main>
+  <script src="https://cdn.statically.io/gh/dependabot-pr/Static-Files/main/my-scripts.js"></script>
+      <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- awesomeFonts -->
+  <script src="https://kit.fontawesome.com/c5266611a7.js" crossorigin="anonymous"></script>
+  </body>
+</html>

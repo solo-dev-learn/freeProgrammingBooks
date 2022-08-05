@@ -1,0 +1,31 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+h1,h2,h3,h4,h5{
+    color:var(--navy) !important;
+    font-weight:600;
+}
+h2{
+    background-color:var(--accentdim2);
+    width:90%;
+    border-radius: 5px;
+    text-align: center;
+    margin-top:80px !important;
+    font-weight:600 !important;
+}
+#progressBar {
+    top: 0px;
+    height: 65px;
+    background: linear-gradient(to right, var(--accentdim1), var(--accent));
+    width: 0%;
+    border-radius: 0px;
+    z-index: 10;
+}
+code{
+    user-select: text !important;
+}
+.pushDown200{
+    margin-top: 200px;
+}
